@@ -1,0 +1,507 @@
+* {
+    margin: 0;
+    padding: 0;
+} body {
+    overflow-x: hidden;
+    font-family: n4;
+} 
+
+:root {
+    --color1:  #4a2f1e;
+    --color2:  #69452d;
+    --color3:  #8f5e3e;
+    --color4:  #563b28;
+    --color5:  #473728;
+    --color6:  #442d1f;
+    --color11:  #2c1c12;
+    --color7:  #875b3e;
+    /* Teks */
+    --color8:  #705949;
+    --color9:  #d1bbb0;
+    --color10: #e5c9be;
+}
+
+@font-face {
+	font-family:'n1';
+	src: url('../plugin/font/normal/n1.ttf') format('truetype');
+}
+@font-face {
+	font-family:'n2';
+	src: url('../plugin/font/normal/n2.ttf') format('truetype');
+}
+
+@font-face {
+	font-family:'n4';
+	src: url('../plugin/font/normal/n4.ttf') format('truetype');
+}
+
+@font-face {
+	font-family:'n6';
+	src: url('../plugin/font/normal/n6.ttf') format('truetype');
+}
+@font-face {
+	font-family:'n7';
+	src: url('../plugin/font/normal/n7.ttf') format('truetype');
+}
+
+
+@font-face {
+	font-family:'s1';
+	src: url('../plugin/font/sambung/s1.ttf') format('truetype');
+}
+@font-face {
+	font-family:'s2';
+	src: url('../plugin/font/sambung/s2.ttf') format('truetype');
+}
+@font-face {
+	font-family:'s3';
+	src: url('../plugin/font/sambung/s3.ttf') format('truetype');
+}
+@font-face {
+	font-family:'s4';
+	src: url('../plugin/font/sambung/s4.ttf') format('truetype');
+}
+@font-face {
+	font-family:'s5';
+	src: url('../plugin/font/sambung/s5.ttf') format('truetype');
+}
+@font-face {
+	font-family:'s6';
+	src: url('../plugin/font/sambung/s6.ttf') format('truetype');
+}
+
+
+.invite {
+    transition: all 500ms ease 0s;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999999999999999999999999999999999999999999999;
+    background: url('1.webp');
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+} .invite button {
+    border: unset;
+    color:white ;
+    transition: all 200ms ease 0s;
+} .invite button:hover {
+    background:var(--color11);
+} .buka {
+    transform: translate(0, -100%);
+}
+.invite p,
+.invite h2 {
+    color:black;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.profile {
+    height: 100vh;
+    background-image: url('1.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} .profile-flex {
+    position: relative;
+    margin: 20px 0;
+} .profile-image {
+    width: 150px;
+    height: 150px;
+    border: 3px solid;
+    background-image: url('13.webp');
+    background-size: 300px 300px;
+    background-position: -70px 0;
+    border-radius: 50%;
+} .profile-frame {
+    width: 164px;
+    height: 170px;
+    position: absolute;
+    top: -10px;
+    left: -7px;
+} .profile-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;  
+} .profile-date {
+    display: flex;
+    gap: 10px;
+    align-items: center;  
+} .profile-date p:nth-child(2) {
+    font-size: 25px;
+} .profile h1 {
+    font-family: s1;
+    font-size: 3rem;
+} .profile h2 {
+    font-family: s4;
+    font-size: 3rem;
+} .profile-date p {
+    font-family: n6;
+} .bismillah {
+    background-image: linear-gradient(to bottom, var(--color1), var(--color2), var(--color3));
+} .bismillah-image {
+    width:300px;
+    filter: 
+        brightness(0) 
+        invert(1)
+        drop-shadow(5px 20px 1px var(--color6));
+    margin-top: 20px;
+} .comments {
+    padding: 10px;
+    overflow: auto;
+    background-color:var(--background1);
+    overflow: auto;   
+    height: 250px;
+} .absensi {
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 0 5px;
+    color:white;
+    background-color: var(--color11);
+}
+.menu a,
+.shopee,
+footer h5,
+footer p,
+footer h1,
+.ucapan h1,
+.ucapan p,
+.himbauan h1,
+.himbauan p,
+.amplop h1,
+.bismillah p,
+.bismillah h5,
+.quran p,
+.love-story h1,
+.quran h1,
+.waktu h2,
+.waktu h1,
+.waktu p,
+.waktu .time  {
+    font-family:n1;
+    text-shadow: 2px 5px 1px var(--color6);
+    color:var(--color10);
+    font-weight:bold;
+} .bismillah h5 {
+    font-family: s2;
+    font-size: 2rem;
+} 
+.quran h1,
+.love-story h1 {
+    font-family: s5;
+} .box  {
+    background-color: var(--color11);
+    width: 200px;
+    padding-top: 10px;
+    border-radius: 90px;
+    box-shadow: 0px 4px 3px var(--color9);
+}
+
+.paslon-male {
+    background-image: url('13.webp');
+    background-position: -84px -20px;
+} .paslon-female {
+    background-image: url('13.webp');
+    background-position: -190px -30px;
+} .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style: none;
+    color:var(--color3);
+} .menu a {
+    text-decoration: none;
+} 
+.love-story {
+    background-color: var(--color6);
+}
+.love-story hr {
+    display: none;
+    width: 10px;
+    background-color: #fff;
+    border-radius: 50px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+} .undangan {
+    font-size: 1.5rem;
+} .kehadiran {
+    color:var(--color10);
+}
+
+.note {
+    width: 18rem;
+    background-color:var(--color3);
+    color:var(--color10);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: justify;
+} .note::before {
+    content: '❤️';
+    color:white;
+    width: 22px;
+    height: 22px;
+    display: block;
+    position: absolute;
+    left: -35px;
+    text-align: center;
+    background-color: var(--color8);
+    border-radius: 50px;
+} .notes {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    justify-content: space-evenly;
+    gap: 30px;
+} .story-img {
+    width: 100%;
+} .hilang {
+    opacity: 0;
+    transform: translate(0, 30px);
+    transition: all 500ms ease 0s;
+} .muncul {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+ 
+.paslon {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 5px solid var(--color9);
+    background-color: #fff;
+    background-size:425px;
+    background-repeat: no-repeat;
+    box-shadow: 10px 10px 5px var(--color1);
+    margin: 30px 0;
+} .quran {
+    background-color: var(--color6);
+    padding: 100px;
+} 
+.banner-top,
+.banner-bottom {
+    background-color:var(--color3);
+    height: 30px;  
+    position: absolute;
+    right: 0;
+    left: 0;
+    border-radius: 0 0 500px 500px;
+} .banner-top {
+    background-color:var(--color11);
+    border-radius: 500px 500px 0 0;
+    top: -25px;
+}
+
+
+.times {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+} #acara {
+    font-size: 2rem;
+    background-color:var(--color11);
+    position: relative;
+} .zoom {
+    opacity: 0;
+    transform: scale(0);
+    transition: all 500ms ease 0s;
+} .zoom.zoomnormal {
+    opacity: 1;
+    transform: scale(1);
+} .zoomdown {
+    opacity: 0;
+    transform: translateY(-100px) scale(0);
+    transition: all 1000ms ease 0s;
+} .zoomdown.zoomdownnormal {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    transition: all 1000ms ease 500ms;
+} .slideleft {
+    opacity: 0;
+    transform: translateY(300px);
+    transition: all 1000ms ease 0s;
+} .slideleft.slideleftnormal {
+    opacity: 1;
+    transform: translateY(0);
+} .slideright {
+    opacity: 0;
+    transform: translateY(-300px);
+    transition: all 1000ms ease 0s;
+} .slideright.sliderightnormal {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+.slideup {
+    opacity: 0;
+    transform: translateY(-300px);
+    transition: all 500ms ease 0s;
+} .slideup.slideupnormal {
+    opacity: 1;
+    transform: translateY(0);
+} 
+
+.waktu h2,
+.waktu h1,
+.waktu p,
+.waktu .time  {
+    text-shadow: 2px 5px 1px var(--color1);
+    color:var(--color10);
+    font-weight:bold;
+} .banner-image {
+    width: 100px;
+    filter: drop-shadow(10px 10px 2px var(--color1));
+} .card p {
+    font-size: 20px;
+} .card-image {
+    background-color: var(--color10);
+    border-radius: 0;
+    margin: auto;
+    width: 95%;
+    height: 200px;
+    box-shadow: 0px 15px 5px var(--color1);
+    border:unset;
+    border-radius: 0 0 300px 300px;
+} .card {
+    padding: 20px 5px;
+    background-image: linear-gradient(to bottom, var(--color3), var(--color2), var(--color1));
+    box-shadow: 5px 5px 3px var(--color3);
+} .card h1 {
+    font-family: s6;
+} .card p {
+    font-size: 13px;
+    font-family: n7;
+} .btn-primary {
+    background-color: var(--color1);
+    border:unset;
+    font-family: n2;
+} .card h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+} .amplop {
+    background:var(--color8);
+} .amplop .card {
+    background-image: unset;
+    background-color: var(--color11);
+    color:var(--color9);
+    box-shadow: 5px 9px 3px var(--color2);
+    border-radius: 80px;
+} .amplop .card p {
+    font-family: n4;
+} .himbauan {
+    background:var(--color8);
+} .protocol {
+    padding: 5px;
+    border-radius: 50%;
+    background-color: var(--color1);
+    color:white;
+} .ucapan {
+    background-image: linear-gradient(to bottom, var(--color8), var(--color5), var(--color11));
+} footer {
+    padding: 20px 0;
+    background-image: linear-gradient(to bottom, var(--color11), var(--color5));
+} footer h1 {
+    font-family: s1;
+} footer h5 {
+    font-family: s5;
+} .bismillah i {
+    color:var(--color9);
+    font-size: 20px;
+    text-shadow: 3px 4px 1px var(--color11);
+} .waktu h2 {
+    font-family: n1;
+    font-size: 1.2rem;
+} .waktu h1 {
+    font-family: s1;
+    font-size: 4rem;
+} .waktu p {
+    font-size: 1.2rem;
+} .amplop h1 {
+    font-family: s3;
+} .himbauan h1 {
+    font-family: s3;
+} .ucapan h1 {
+    font-family: s3;
+} .hilang {
+    opacity: 0;
+    transform: translateY(150px);
+    transition: all 500ms ease 0s;
+} .hilang.muncul {
+    opacity: 1;
+    transform: translateY(0);
+} .nav {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    border-radius: 150px;
+    left: 0;
+    right: 0;
+    z-index: 999999999999999999999999999999999;
+    background-color: var(--color1);
+    width: 95%;
+    padding: 10px 0;
+    margin: auto;
+    border: 5px solid var(--color10);
+} .nav a {
+    color:var(--color9);
+} 
+
+.invite h1 {font-family: s5;}
+.invite h2 {font-family: s1;}
+.myicon {
+    color:var(--color9);
+    text-align: center;
+    width: 35px;
+    height: 34px;
+    background-color:var(--color11);
+    display: none;
+    padding: 5px;
+    border-radius: 50%;
+    position: fixed;
+    left: 10px;
+    top: 50%;
+    bottom: 50%;
+    z-index: 9999999999999999999999999999999999;
+    border: 3px solid var(--color9);
+} .myicon i {
+    line-height: 17px;
+}
+
+
+@media screen and (max-width:684px) {
+    .time {
+        font-size: 2rem;
+    }  .love-story hr {
+        display: block;
+    } .notes {
+        flex-direction: column;
+    } .note {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .paslon-box {
+        flex-direction: column;
+    } .paslon {
+        margin: 30px auto;
+    }
+}
